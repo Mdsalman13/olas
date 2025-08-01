@@ -1,0 +1,26 @@
+class CabDriver:
+    def __init__(self, name, license_number, phone, car_model):
+        self.name = name
+        self.license_number = license_number
+        self.phone = phone
+        self.car_model = car_model
+
+    def display_info(self):
+        print(f"Driver Name     : {self.name}")
+        print(f"License Number  : {self.license_number}")
+        print(f"Phone Number    : {self.phone}")
+        print(f"Car Model       : {self.car_model}")
+        print("-" * 30)
+
+
+# Create a list to store drivers
+drivers_list = []
+
+# Add drivers manually
+drivers_list.append(CabDriver("Raj Singh", "DL123456", "9876543210", "Hyundai i10"))
+drivers_list.append(CabDriver("Amit Sharma", "MH654321", "9765432109", "Maruti Suzuki Swift"))
+
+# Display all drivers
+print("Cab Drivers Information:\n")
+for driver in drivers_list:
+    driver.display_info()
